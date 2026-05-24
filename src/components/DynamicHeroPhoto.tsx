@@ -99,7 +99,7 @@ export default function DynamicHeroPhoto() {
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <img
-            src="/hero.jpg"
+            src={`${process.env.NEXT_PUBLIC_BASE_PATH || ""}/hero.jpg`}
             alt="Dinesh & Monisha"
             className="w-full h-full object-cover object-center pointer-events-none"
             loading="eager"
