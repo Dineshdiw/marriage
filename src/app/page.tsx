@@ -176,23 +176,33 @@ export default function Home() {
             Monisha
           </motion.h1>
 
-          {/* Venue */}
+          {/* Date */}
           <motion.p
             custom={5}
             variants={fadeUp}
-            className="mx-auto mt-1 sm:mt-2 max-w-[17rem] sm:max-w-none text-xs sm:text-base text-text-medium leading-relaxed"
+            className="mx-auto mt-1 sm:mt-2 text-sm sm:text-lg text-rose-gold-dark font-medium tracking-wide"
+            style={{ fontFamily: "var(--font-display)" }}
+          >
+            23rd &amp; 24th June 2026
+          </motion.p>
+
+          {/* Venue */}
+          <motion.p
+            custom={6}
+            variants={fadeUp}
+            className="mx-auto mt-0.5 sm:mt-1 max-w-[17rem] sm:max-w-none text-xs sm:text-base text-text-medium leading-relaxed"
             style={{ fontFamily: "var(--font-body)" }}
           >
             KV Conventions, Sanganakal Road, Ballari
           </motion.p>
 
           {/* Countdown */}
-          <motion.div custom={6} variants={fadeUp}>
+          <motion.div custom={7} variants={fadeUp}>
             <CountdownTimer />
           </motion.div>
 
           {/* Scroll hint */}
-          <motion.div custom={7} variants={fadeUp} className="mt-3 sm:mt-10">
+          <motion.div custom={8} variants={fadeUp} className="mt-3 sm:mt-10">
             <motion.a
               href="#invitation"
               className="inline-flex items-center justify-center w-9 h-9 sm:w-10 sm:h-10 rounded-full text-rose-gold-light hover:text-rose-gold hover:bg-rose-gold-light/10 transition-all"
