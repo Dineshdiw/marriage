@@ -100,6 +100,7 @@ export default function CinematicLoader() {
                 style={{
                   fontFamily: "var(--font-script)",
                   fontSize: "clamp(2.5rem, 10vw, 4.5rem)",
+                  paddingLeft: "0.15em",
                 }}
               >
                 Disha
