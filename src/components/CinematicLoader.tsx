@@ -89,15 +89,7 @@ export default function CinematicLoader() {
                 className="absolute inset-[-4px] border-t border-b border-rose-gold/20 rounded-full"
               />
 
-              {/* Hashtag symbol */}
-              <motion.span
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 0.4, scale: 1 }}
-                transition={{ delay: 0.4, duration: 1 }}
-                className="absolute top-2 text-[0.6rem] sm:text-xs text-rose-gold font-medium tracking-widest uppercase font-sans"
-              >
-                Wedding Hashtag
-              </motion.span>
+
 
               {/* Core script text: Disha */}
               <motion.h1
