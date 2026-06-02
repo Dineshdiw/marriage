@@ -10,6 +10,7 @@ import StickyNav from "@/components/StickyNav";
 import DynamicHeroPhoto from "@/components/DynamicHeroPhoto";
 import InteractiveInvitationCard from "@/components/InteractiveInvitationCard";
 import CinematicLoader from "@/components/CinematicLoader";
+import ShareInvitation from "@/components/ShareInvitation";
 
 const CONTAINER = "w-full max-w-3xl mx-auto px-5 sm:px-6 lg:px-8";
 const NARROW_CONTAINER = "w-full max-w-2xl mx-auto px-5 sm:px-6";
@@ -242,39 +243,14 @@ export default function Home() {
                 className="text-sm sm:text-lg md:text-xl text-text-medium leading-relaxed italic"
                 style={{ fontFamily: "var(--font-body)" }}
               >
-                With the divine blessings of
+                With joyful hearts,
               </p>
               <p
-                className="text-xs sm:text-base text-rose-gold-dark mt-1.5 sm:mt-2 mb-4 sm:mb-7 leading-snug"
-                style={{ fontFamily: "var(--font-display)" }}
-              >
-                Late Smt. Rajalakshmamma &amp;<br className="sm:hidden" /> Late Sri Ashwathaiah Shetty
-              </p>
-
-              <OrnamentalDivider />
-
-              <div className="mt-3 sm:mt-5">
-                <p
-                  className="text-sm sm:text-lg text-rose-gold-dark font-semibold leading-snug"
-                  style={{ fontFamily: "var(--font-display)" }}
-                >
-                  Smt. Nagamani C. &amp;<br className="sm:hidden" /> Shri Chandrashekar A.
-                </p>
-                <p
-                  className="text-[0.65rem] sm:text-sm text-text-medium mt-0.5"
-                  style={{ fontFamily: "var(--font-body)" }}
-                >
-                  Guligenahalli
-                </p>
-              </div>
-
-              <p
-                className="text-xs sm:text-base text-text-medium leading-relaxed mt-3 sm:mt-5 mb-4 sm:mb-7"
+                className="text-xs sm:text-base text-text-medium leading-relaxed mt-1 sm:mt-2 mb-4 sm:mb-7"
                 style={{ fontFamily: "var(--font-body)" }}
               >
-                cordially invite your gracious presence, along with your family
-                and friends, on the auspicious occasion of the marriage of their
-                beloved son
+                we invite you to share in the celebration<br />
+                of the wedding of
               </p>
 
               {/* Groom */}
@@ -325,7 +301,7 @@ export default function Home() {
                     fontSize: "clamp(1.2rem, 5vw, 2.5rem)",
                   }}
                 >
-                  Chi. Kum. Sou. Dr. S. J. Monisha
+                  Chi. Kum. Sou. S. J. Monisha
                 </h2>
                 <p
                   className="text-[0.65rem] sm:text-sm text-text-medium mt-0.5 leading-snug"
@@ -525,7 +501,7 @@ export default function Home() {
               style={{ border: "1px solid rgba(183,110,121,0.08)" }}
             >
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3849.6!2d76.92!3d15.14!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTXCsDA4JzI0LjAiTiA3NsKwNTUnMTIuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15358!2d76.953914!3d15.1638921!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb71100575666d1%3A0xf0d6b2636f23a1f9!2sKV%20CONVENTIONS!5e0!3m2!1sen!2sin"
                 width="100%"
               className="h-44 sm:h-56 md:h-64"
                 style={{ border: 0 }}
@@ -554,6 +530,15 @@ export default function Home() {
         </div>
       </SectionWrapper>
 
+      {/* ═══════════════ RSVP & SHARE ═══════════════ */}
+      <SectionWrapper id="rsvp" className="py-12 sm:py-20 md:py-28">
+        <div className={CONTAINER}>
+          <div className="mx-auto max-w-md space-y-4">
+            <ShareInvitation />
+          </div>
+        </div>
+      </SectionWrapper>
+
       {/* ═══════════════ FOOTER ═══════════════ */}
       <footer className="relative py-8 sm:py-14">
         <div
@@ -576,7 +561,7 @@ export default function Home() {
             className="text-xs sm:text-base text-text-medium"
             style={{ fontFamily: "var(--font-display)" }}
           >
-            24th June 2026 &bull; Ballari
+            23rd &amp; 24th June 2026 &bull; Ballari
           </p>
 
           <OrnamentalDivider className="my-3 sm:my-4" />
@@ -594,6 +579,7 @@ export default function Home() {
               { href: "#invitation", label: "Invitation" },
               { href: "#events", label: "Events" },
               { href: "#venue", label: "Venue" },
+              { href: "#rsvp", label: "Share" },
             ].map((link) => (
               <a
                 key={link.label}

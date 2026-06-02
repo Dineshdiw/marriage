@@ -8,6 +8,7 @@ const sections = [
   { id: "invitation", label: "Invitation" },
   { id: "events", label: "Events" },
   { id: "venue", label: "Venue" },
+  { id: "rsvp", label: "Share" },
 ];
 
 export default function StickyNav() {
